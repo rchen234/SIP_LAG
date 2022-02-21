@@ -221,6 +221,12 @@ class SNIPinst(master.StochIPinst):
 		self.scenrc.getVarByName("y"+str(self.ind[self.SCEN[scen_id,1]])).lb = 0.0
 		self.scenrc.getVarByName("y"+str(self.ind[self.SCEN[scen_id,0]])).obj = 0.0
 		self.scenrc.update()
+		Benderscoef = []
+		for i in range(self.Nfv):
+			Benderscoef.append(subg[i])
+		Benderscoef.append(const)
+		Benderscoef = np.array([Benderscoef])
+		self.BendersCuts[scen_id] = np.append(self.BendersCuts[scen_id], Benderscoef, axis=0)
 		return ObjValue,const,subg
 
 	def SolveScenSub(self,scen_id,objCoef,regCoefy,tlimit,MIPgap='nan'):
