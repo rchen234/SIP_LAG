@@ -1,0 +1,48 @@
+
+Gurobi 8.1.1 (win64) logging started 07/09/20 23:42:03
+
+Changed value of parameter LogFile to Results/instance0_30_3_BnC_basic.log
+   Prev: Results/instance0_30_3_BnC.log  Default: 
+Changed value of parameter Presolve to 0
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter Cuts to 0
+   Prev: -1  Min: -1  Max: 3  Default: -1
+Optimize a model with 4875 rows, 776 columns and 17845 nonzeros
+Variable types: 456 continuous, 320 integer (320 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 5e+00]
+  Objective range  [3e-05, 1e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-02, 3e+01]
+Variable types: 456 continuous, 320 integer (320 binary)
+
+Root relaxation: objective 2.133886e-01, 1291 iterations, 0.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.21339    0   20          -    0.21339      -     -    0s
+     0     0    0.21339    0   20          -    0.21339      -     -    0s
+     0     2    0.21339    0   20          -    0.21339      -     -    0s
+    64    62    0.22017   30   13          -    0.21403      -  45.6    5s
+*   92    67              43       0.2204635    0.21403  2.92%  35.9    7s
+*  193    76              18       0.2186672    0.21435  1.97%  56.5   11s
+*  199    45              17       0.2174781    0.21435  1.44%  55.9   13s
+*  206    46              19       0.2173825    0.21435  1.39%  55.0   14s
+*  215    36              15       0.2169420    0.21435  1.19%  54.0   18s
+   287    35    0.21660   12   25    0.21694    0.21483  0.97%  60.4   20s
+*  371    44              20       0.2168697    0.21570  0.54%  59.9   24s
+*  385    33              18       0.2166740    0.21578  0.41%  60.1   25s
+*  435    31              17       0.2164292    0.21589  0.25%  60.0   27s
+
+Cutting planes:
+  Lazy constraints: 165
+
+Explored 496 nodes (30018 simplex iterations) in 27.71 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 8: 0.216429 0.216674 0.21687 ... 0.220464
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.7921e-06) exceeds tolerance
+Best objective 2.164291544238e-01, best bound 2.164291544238e-01, gap 0.0000%

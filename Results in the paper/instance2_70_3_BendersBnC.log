@@ -1,0 +1,78 @@
+
+Gurobi 8.1.1 (win64) logging started 07/10/20 18:01:07
+
+Changed value of parameter LogFile to Results/instance2_70_3_BendersBnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 7154.814666509628
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3009 rows, 776 columns and 6584 nonzeros
+Variable types: 456 continuous, 320 integer (320 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [3e-05, 1e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-02, 7e+01]
+Presolve time: 0.01s
+Presolved: 3009 rows, 776 columns, 9114 nonzeros
+Variable types: 456 continuous, 320 integer (320 binary)
+
+Root relaxation: objective 1.189080e-01, 1630 iterations, 0.07 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.11891    0  113          -    0.11891      -     -    0s
+     0     0    0.13026    0  101          -    0.13026      -     -    0s
+     0     0    0.13336    0  107          -    0.13336      -     -    0s
+     0     0    0.13739    0  104          -    0.13739      -     -    0s
+     0     0    0.13863    0  105          -    0.13863      -     -    0s
+     0     0    0.14078    0  112          -    0.14078      -     -    0s
+     0     0    0.14131    0  106          -    0.14131      -     -    0s
+     0     0    0.14234    0  104          -    0.14234      -     -    0s
+     0     0    0.14272    0  107          -    0.14272      -     -    0s
+     0     0    0.14326    0   83          -    0.14326      -     -    0s
+     0     0    0.14345    0  107          -    0.14345      -     -    0s
+     0     0    0.14363    0   86          -    0.14363      -     -    0s
+     0     0    0.14371    0   86          -    0.14371      -     -    0s
+     0     0    0.14373    0  109          -    0.14373      -     -    0s
+     0     0    0.14373    0  109          -    0.14373      -     -    0s
+     0     2    0.14373    0  109          -    0.14373      -     -    0s
+    63    62    0.15281   27   22          -    0.14381      -  63.3    6s
+   196   185    0.21903   85   10          -    0.14381      -  36.5   12s
+   220   207    0.22112  100    -          -    0.14381      -  36.5   16s
+*  242   218             106       0.2280948    0.14381  37.0%  36.4   20s
+*  265   188             102       0.1780671    0.14385  19.2%  38.7   26s
+*  274   191             106       0.1775990    0.14385  19.0%  39.4   30s
+   458   361    0.15273   39   34    0.17760    0.14393  19.0%  43.4   36s
+*  497   360              87       0.1698357    0.14393  15.3%  43.0   41s
+   577   424     cutoff   73         0.16984    0.14393  15.3%  44.8   47s
+*  612   407              99       0.1663144    0.14430  13.2%  44.0   51s
+*  696   493              98       0.1663079    0.14430  13.2%  48.1   55s
+   739   524    0.14990   50  109    0.16631    0.14955  10.1%  49.0   60s
+   760   539    0.15010    6  110    0.16631    0.15010  9.75%  56.8   65s
+   779   557    0.15057   29   32    0.16631    0.15038  9.58%  62.3   70s
+   859   599    0.15183   41    -    0.16631    0.15057  9.46%  68.5   76s
+   878   603    0.15288   39   63    0.16631    0.15057  9.46%  68.4   82s
+   988   668    0.16061   48   55    0.16631    0.15057  9.46%  71.4   86s
+* 1004   593              70       0.1548161    0.15057  2.74%  71.5   88s
+  1084   573    0.15153   35   26    0.15482    0.15060  2.72%  70.8   91s
+* 1162   545             101       0.1542955    0.15060  2.40%  70.1   94s
+* 1178   395              47       0.1514515    0.15060  0.56%  70.0   96s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 202
+  Flow cover: 380
+  Lazy constraints: 218
+
+Explored 1354 nodes (99240 simplex iterations) in 97.09 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 9: 0.151452 0.154296 0.154816 ... 0.228095
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.514515255777e-01, best bound 1.514475721826e-01, gap 0.0026%

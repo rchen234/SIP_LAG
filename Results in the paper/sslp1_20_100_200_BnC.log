@@ -1,0 +1,56 @@
+
+Gurobi 8.1.1 (win64) logging started 07/05/20 19:38:45
+
+Changed value of parameter LogFile to Results/sslp1_20_100_200_BnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 4824.938251495361
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 5596 rows, 220 columns and 85875 nonzeros
+Variable types: 200 continuous, 20 integer (20 binary)
+Coefficient statistics:
+  Matrix range     [2e-13, 2e+06]
+  Objective range  [5e-03, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-13, 6e+04]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 397 rows and 0 columns
+Presolve time: 0.06s
+Presolved: 5199 rows, 220 columns, 83479 nonzeros
+Variable types: 200 continuous, 20 integer (20 binary)
+
+Root relaxation: objective -8.848857e+02, 782 iterations, 0.20 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -884.88574    0   14          - -884.88574      -     -    0s
+     0     0 -884.84921    0   13          - -884.84921      -     -    0s
+     0     0 -884.82313    0   12          - -884.82313      -     -    0s
+     0     0 -884.81470    0   12          - -884.81470      -     -    0s
+     0     0 -884.80424    0   12          - -884.80424      -     -    0s
+     0     0 -884.79666    0   12          - -884.79666      -     -    0s
+     0     0 -884.79379    0   12          - -884.79379      -     -    0s
+     0     0 -884.78947    0   12          - -884.78947      -     -    1s
+     0     0 -884.78817    0   12          - -884.78817      -     -    1s
+     0     0 -884.78817    0   12          - -884.78817      -     -    1s
+     0     2 -884.78817    0   12          - -884.78817      -     -    1s
+*   36    29              17    -883.7599764 -884.69334  0.11%  62.1    5s
+
+Cutting planes:
+  MIR: 8
+  Lazy constraints: 118
+
+Explored 65 nodes (3763 simplex iterations) in 5.93 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -883.76 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (2.5798e-06) exceeds tolerance
+Best objective -8.837599763842e+02, best bound -8.837599763842e+02, gap 0.0000%

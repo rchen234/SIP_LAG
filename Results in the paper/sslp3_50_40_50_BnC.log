@@ -1,0 +1,52 @@
+
+Gurobi 8.1.1 (win64) logging started 07/08/20 07:08:28
+
+Changed value of parameter LogFile to Results/sslp3_50_40_50_BnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 5303.046515226364
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1695 rows, 100 columns and 68460 nonzeros
+Variable types: 50 continuous, 50 integer (50 binary)
+Coefficient statistics:
+  Matrix range     [2e-13, 8e+05]
+  Objective range  [2e-02, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-13, 5e+03]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 68 rows and 0 columns
+Presolve time: 0.12s
+Presolved: 1627 rows, 100 columns, 67552 nonzeros
+Variable types: 50 continuous, 50 integer (50 binary)
+
+Root relaxation: objective -3.126407e+02, 214 iterations, 0.06 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -312.64069    0   12          - -312.64069      -     -    0s
+     0     0 -312.51996    0   14          - -312.51996      -     -    0s
+     0     0 -312.49554    0   15          - -312.49554      -     -    0s
+     0     0 -312.38000    0   12          - -312.38000      -     -    0s
+     0     0 -312.36044    0   12          - -312.36044      -     -    0s
+     0     0 -312.34043    0   13          - -312.34043      -     -    0s
+     0     0 -312.34043    0   13          - -312.34043      -     -    0s
+     0     2 -312.34043    0   13          - -312.34043      -     -    0s
+*    2     2               1    -312.3399912 -312.33999  0.00%  76.5    1s
+
+Cutting planes:
+  MIR: 4
+
+Explored 3 nodes (489 simplex iterations) in 1.77 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -312.34 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (2.9017e-06) exceeds tolerance
+Best objective -3.123399911838e+02, best bound -3.123399911838e+02, gap 0.0000%

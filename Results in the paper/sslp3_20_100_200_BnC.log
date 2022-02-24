@@ -1,0 +1,90 @@
+
+Gurobi 8.1.1 (win64) logging started 07/07/20 16:37:59
+
+Changed value of parameter LogFile to Results/sslp3_20_100_200_BnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 3526.2506651878357
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 6542 rows, 220 columns and 105284 nonzeros
+Variable types: 200 continuous, 20 integer (20 binary)
+Coefficient statistics:
+  Matrix range     [4e-13, 2e+06]
+  Objective range  [5e-03, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-13, 5e+04]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 711 rows and 0 columns
+Presolve time: 0.11s
+Presolved: 5831 rows, 220 columns, 98111 nonzeros
+Variable types: 200 continuous, 20 integer (20 binary)
+
+Root relaxation: objective -8.590808e+02, 678 iterations, 0.26 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -859.08080    0   15          - -859.08080      -     -    0s
+     0     0 -859.06820    0   15          - -859.06820      -     -    0s
+     0     0 -859.05908    0   15          - -859.05908      -     -    0s
+     0     0 -859.05292    0   15          - -859.05292      -     -    0s
+     0     0 -859.04770    0   15          - -859.04770      -     -    0s
+     0     0 -859.04344    0   14          - -859.04344      -     -    1s
+     0     0 -859.03610    0   14          - -859.03610      -     -    1s
+     0     0 -859.02741    0   15          - -859.02741      -     -    1s
+     0     0 -859.02258    0   14          - -859.02258      -     -    1s
+     0     0 -859.02102    0   14          - -859.02102      -     -    1s
+     0     0 -859.01503    0   15          - -859.01503      -     -    1s
+     0     0 -859.01089    0   15          - -859.01089      -     -    1s
+     0     0 -859.00637    0   15          - -859.00637      -     -    2s
+     0     0 -859.00427    0   15          - -859.00427      -     -    2s
+     0     0 -859.00147    0   15          - -859.00147      -     -    2s
+     0     0 -859.00001    0   15          - -859.00001      -     -    2s
+     0     0 -858.99801    0   15          - -858.99801      -     -    2s
+     0     0 -858.99609    0   15          - -858.99609      -     -    2s
+     0     0 -858.99458    0   15          - -858.99458      -     -    2s
+     0     0 -858.99219    0   15          - -858.99219      -     -    2s
+     0     0 -858.99047    0   15          - -858.99047      -     -    3s
+     0     0 -858.98458    0   14          - -858.98458      -     -    3s
+     0     0 -858.98322    0   14          - -858.98322      -     -    3s
+     0     0 -858.98126    0   14          - -858.98126      -     -    3s
+     0     0 -858.97969    0   14          - -858.97969      -     -    3s
+     0     0 -858.97892    0   14          - -858.97892      -     -    3s
+     0     0 -858.97327    0   15          - -858.97327      -     -    3s
+     0     0 -858.97244    0   14          - -858.97244      -     -    3s
+     0     0 -858.97185    0   15          - -858.97185      -     -    3s
+     0     0 -858.97004    0   15          - -858.97004      -     -    4s
+     0     0 -858.96836    0   14          - -858.96836      -     -    4s
+     0     0 -858.96659    0   15          - -858.96659      -     -    4s
+     0     0 -858.96591    0   14          - -858.96591      -     -    4s
+     0     0 -858.96490    0   14          - -858.96490      -     -    4s
+     0     0 -858.96490    0   14          - -858.96490      -     -    4s
+     0     2 -858.96490    0   14          - -858.96490      -     -    5s
+*   36    30              20    -853.8399776 -858.55764  0.55%  60.3    9s
+    44    33 -854.19582   18    - -853.83998 -858.14102  0.50%  64.0   11s
+    89    53 -855.45542    4    5 -853.83998 -858.14102  0.50%  55.9   15s
+   121    55     cutoff    9      -853.83998 -857.53482  0.43%  51.2   20s
+   185    50     cutoff   11      -853.83998 -856.83220  0.35%  47.4   27s
+*  224    51              20    -853.9849763 -856.48743  0.29%  46.1   29s
+   238    51 -855.05052    8    7 -853.98498 -856.48743  0.29%  46.5   31s
+   304    54     cutoff   14      -853.98498 -855.71968  0.20%  44.3   38s
+   327    53     cutoff   14      -853.98498 -855.52595  0.18%  43.5   40s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 30
+  Lazy constraints: 4234
+
+Explored 436 nodes (18399 simplex iterations) in 41.73 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -853.985 -853.84 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (6.4626e-06) exceeds tolerance
+Best objective -8.539849763078e+02, best bound -8.539849763078e+02, gap 0.0000%

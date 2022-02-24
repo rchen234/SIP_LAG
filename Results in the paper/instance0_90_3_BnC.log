@@ -1,0 +1,74 @@
+
+Gurobi 8.1.1 (win64) logging started 07/10/20 06:52:36
+
+Changed value of parameter LogFile to Results/instance0_90_3_BnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 4503.907527446747
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 9360 rows, 776 columns and 33875 nonzeros
+Variable types: 456 continuous, 320 integer (320 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 7e+00]
+  Objective range  [3e-05, 1e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-03, 9e+01]
+Presolve removed 1660 rows and 0 columns
+Presolve time: 0.06s
+Presolved: 7700 rows, 776 columns, 36437 nonzeros
+Variable types: 456 continuous, 320 integer (320 binary)
+
+Root relaxation: objective 1.172507e-01, 2040 iterations, 0.50 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.11725    0  101          -    0.11725      -     -    0s
+     0     0    0.11745    0  102          -    0.11745      -     -    0s
+     0     0    0.11750    0  102          -    0.11750      -     -    0s
+     0     0    0.11757    0  102          -    0.11757      -     -    0s
+     0     0    0.11758    0  101          -    0.11758      -     -    1s
+     0     0    0.11758    0  101          -    0.11758      -     -    1s
+     0     2    0.11758    0  101          -    0.11758      -     -    1s
+    82    79    0.12144   35    -          -    0.11767      -  79.8    6s
+*  110    93              56       0.1266547    0.11767  7.09%  72.0   10s
+*  133    60              50       0.1232595    0.11781  4.42%  75.2   14s
+   164    72    0.11808    3  111    0.12326    0.11801  4.26%   101   15s
+   222   107    0.11973    6   91    0.12326    0.11806  4.22%   122   21s
+*  259   117              44       0.1231085    0.11806  4.10%   112   22s
+   309   148     cutoff   31         0.12311    0.11823  3.97%   114   27s
+   461   255    0.11896    5  118    0.12311    0.11828  3.92%   118   30s
+   659   347     cutoff   15         0.12311    0.11848  3.76%   134   35s
+*  702   353              42       0.1229817    0.11857  3.59%   132   39s
+   733   385    0.12258   12  101    0.12298    0.11857  3.59%   132   42s
+   737   388    0.12133   25  114    0.12298    0.11857  3.59%   132   45s
+   757   394    0.11944   17  103    0.12298    0.11873  3.46%   135   50s
+   857   411    0.11993   23   66    0.12298    0.11893  3.30%   144   55s
+   975   410    0.12261   26   68    0.12298    0.11922  3.06%   146   60s
+  1128   411    0.12271   23   62    0.12298    0.11960  2.75%   145   66s
+* 1135   391              34       0.1229334    0.11960  2.71%   145   68s
+  1204   389    0.12138   19   93    0.12293    0.11977  2.57%   147   70s
+  1364   386    0.12219   21   43    0.12293    0.11997  2.41%   149   75s
+* 1427   280              32       0.1222341    0.12007  1.77%   149   78s
+  1495   270     cutoff   22         0.12223    0.12042  1.48%   151   80s
+  1699   183    0.12215   21   42    0.12223    0.12069  1.27%   155   85s
+  1787   166     cutoff   22         0.12223    0.12089  1.10%   153   91s
+* 1801   136              31       0.1220383    0.12089  0.94%   153   93s
+  1851   119    0.12098   19   55    0.12204    0.12096  0.88%   153   96s
+* 1988    51              27       0.1218053    0.12128  0.43%   151  100s
+* 2052     0              25       0.1215077    0.12141  0.08%   150  102s
+
+Cutting planes:
+  MIR: 29
+  Lazy constraints: 175
+
+Explored 2100 nodes (316335 simplex iterations) in 102.85 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 9: 0.121508 0.121805 0.122038 ... 0.126655
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.215076752727e-01, best bound 1.215076752727e-01, gap 0.0000%

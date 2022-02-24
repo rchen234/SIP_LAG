@@ -1,0 +1,57 @@
+
+Gurobi 9.0.3 (win64) logging started Sun Jan  2 23:04:55 2022
+
+Changed value of parameter LogFile to Results/sslp2_50_40_50_var_BnC.log
+   Prev:   Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 4410.943730592728
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (win64)
+Optimize a model with 2400 rows, 150 columns and 197812 nonzeros
+Model fingerprint: 0xd60c24e5
+Variable types: 100 continuous, 50 integer (50 binary)
+Coefficient statistics:
+  Matrix range     [3e-05, 4e+05]
+  Objective range  [2e-02, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [9e-16, 6e+03]
+Presolve added 0 rows and 71 columns
+Presolve removed 162 rows and 0 columns
+Presolve time: 0.20s
+Presolved: 2238 rows, 221 columns, 164222 nonzeros
+Variable types: 169 continuous, 52 integer (50 binary)
+
+Root relaxation: objective -3.546360e+02, 500 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -354.63598    0   29          - -354.63598      -     -    0s
+     0     0 -354.63598    0   29          - -354.63598      -     -    0s
+     0     0 -354.59964    0   27          - -354.59964      -     -    0s
+     0     0 -354.58624    0   30          - -354.58624      -     -    1s
+     0     0 -354.56897    0   31          - -354.56897      -     -    1s
+     0     0 -354.56897    0   31          - -354.56897      -     -    1s
+     0     2 -354.56897    0   31          - -354.56897      -     -    2s
+*   46    44              28    -353.1799916 -354.20167  0.29%  32.8    2s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Flow cover: 1
+  Lazy constraints: 37
+
+Explored 120 nodes (3984 simplex iterations) in 3.43 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -353.18 
+No other solutions better than -353.18
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (6.2370e-06) exceeds tolerance
+Best objective -3.531799915961e+02, best bound -3.531799915961e+02, gap 0.0000%
+
+User-callback calls 950, time in user-callback 0.91 sec

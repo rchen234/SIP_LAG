@@ -1,0 +1,59 @@
+
+Gurobi 9.0.3 (win64) logging started Sat Jan  1 21:13:14 2022
+
+Changed value of parameter LogFile to Results/sslp1_50_40_50_var_BnC.log
+   Prev:   Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 5226.208781719208
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (win64)
+Optimize a model with 2477 rows, 150 columns and 202019 nonzeros
+Model fingerprint: 0x04732ce8
+Variable types: 100 continuous, 50 integer (50 binary)
+Coefficient statistics:
+  Matrix range     [2e-06, 4e+05]
+  Objective range  [2e-02, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-15, 8e+03]
+Presolve added 0 rows and 87 columns
+Presolve removed 262 rows and 0 columns
+Presolve time: 0.19s
+Presolved: 2215 rows, 237 columns, 167003 nonzeros
+Variable types: 186 continuous, 51 integer (50 binary)
+
+Root relaxation: objective -3.592180e+02, 555 iterations, 0.15 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -359.21797    0   23          - -359.21797      -     -    0s
+     0     0 -359.21790    0   23          - -359.21790      -     -    0s
+     0     0 -359.21025    0   24          - -359.21025      -     -    0s
+     0     0 -359.21025    0   24          - -359.21025      -     -    1s
+     0     0 -359.21025    0   24          - -359.21025      -     -    1s
+     0     0 -359.21025    0   24          - -359.21025      -     -    1s
+     0     0 -359.21025    0   24          - -359.21025      -     -    1s
+     0     2 -359.21025    0   24          - -359.21025      -     -    1s
+*  104    99              50    -346.2999913 -358.88584  3.63%  28.8    3s
+   262   233 -357.97143   25    - -346.29999 -358.35023  3.48%  27.5    5s
+*  451   163              50    -355.5999911 -358.10731  0.71%  23.3    8s
+*  596   149              38    -355.9799953 -357.91167  0.54%  23.9   10s
+
+Cutting planes:
+  MIR: 4
+  Flow cover: 2
+  Lazy constraints: 989
+
+Explored 957 nodes (25045 simplex iterations) in 13.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: -355.98 -355.6 -346.3 
+No other solutions better than -355.98
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -3.559799952974e+02, best bound -3.559799952974e+02, gap 0.0000%
+
+User-callback calls 2882, time in user-callback 7.41 sec

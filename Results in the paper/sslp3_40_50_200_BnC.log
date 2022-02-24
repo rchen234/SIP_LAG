@@ -1,0 +1,47 @@
+
+Gurobi 8.1.1 (win64) logging started 07/08/20 04:35:49
+
+Changed value of parameter LogFile to Results/sslp3_40_50_200_BnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 1396.8984115123749
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 7450 rows, 240 columns and 233851 nonzeros
+Variable types: 200 continuous, 40 integer (40 binary)
+Coefficient statistics:
+  Matrix range     [2e-13, 9e+05]
+  Objective range  [5e-03, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-13, 1e+04]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 297 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 7153 rows, 240 columns, 230363 nonzeros
+Variable types: 200 continuous, 40 integer (40 binary)
+
+Root relaxation: objective -3.879362e+02, 707 iterations, 0.30 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -387.93621    0   13          - -387.93621      -     -    0s
+     0     0 -387.93621    0   13          - -387.93621      -     -    0s
+     0     2 -387.93621    0   13          - -387.93621      -     -    1s
+*   15     9               6    -387.8049907 -387.88779  0.02%   117    5s
+
+Cutting planes:
+  Lazy constraints: 24
+
+Explored 20 nodes (2483 simplex iterations) in 5.89 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -387.805 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (3.7926e-06) exceeds tolerance
+Best objective -3.878049906802e+02, best bound -3.878049906802e+02, gap 0.0000%

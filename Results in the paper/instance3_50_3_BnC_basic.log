@@ -1,0 +1,40 @@
+
+Gurobi 8.1.1 (win64) logging started 07/11/20 00:54:54
+
+Changed value of parameter LogFile to Results/instance3_50_3_BnC_basic.log
+   Prev: Results/instance3_50_3_BnC.log  Default: 
+Changed value of parameter Presolve to 0
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Changed value of parameter Cuts to 0
+   Prev: -1  Min: -1  Max: 3  Default: -1
+Optimize a model with 6536 rows, 776 columns and 23936 nonzeros
+Variable types: 456 continuous, 320 integer (320 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 1e+01]
+  Objective range  [3e-05, 1e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-03, 5e+01]
+Variable types: 456 continuous, 320 integer (320 binary)
+
+Root relaxation: objective 1.752023e-01, 2004 iterations, 0.34 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.17520    0   45          -    0.17520      -     -    0s
+     0     0    0.17520    0   45          -    0.17520      -     -    0s
+     0     2    0.17520    0   45          -    0.17520      -     -    0s
+*  129    58              62       0.1769204    0.17521  0.97%  31.0    4s
+   150    60     cutoff    6         0.17692    0.17565  0.72%  44.0    5s
+*  225    43              25       0.1767194    0.17578  0.53%  66.6    9s
+
+Cutting planes:
+  Lazy constraints: 47
+
+Explored 282 nodes (21633 simplex iterations) in 9.74 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0.176719 0.17692 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.767194197812e-01, best bound 1.767194197812e-01, gap 0.0000%

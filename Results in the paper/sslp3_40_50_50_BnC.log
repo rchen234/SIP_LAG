@@ -1,0 +1,49 @@
+
+Gurobi 8.1.1 (win64) logging started 07/08/20 00:57:57
+
+Changed value of parameter LogFile to Results/sslp3_40_50_50_BnC.log
+   Prev: gurobi.log  Default: 
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter lazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter timeLimit to 4999.537221670151
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1991 rows, 90 columns and 62200 nonzeros
+Variable types: 50 continuous, 40 integer (40 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 9e+05]
+  Objective range  [2e-02, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-13, 1e+04]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 121 rows and 0 columns
+Presolve time: 0.11s
+Presolved: 1870 rows, 90 columns, 59412 nonzeros
+Variable types: 50 continuous, 40 integer (40 binary)
+
+Root relaxation: objective -4.030606e+02, 246 iterations, 0.07 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -403.06065    0   13          - -403.06065      -     -    0s
+     0     0 -403.05654    0   12          - -403.05654      -     -    0s
+     0     0 -403.05654    0   12          - -403.05654      -     -    0s
+     0     2 -403.05654    0   12          - -403.05654      -     -    0s
+*   10     6               4    -402.8199898 -403.03607  0.05%  42.6    2s
+
+Cutting planes:
+  MIR: 1
+  Lazy constraints: 6
+
+Explored 15 nodes (719 simplex iterations) in 2.28 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -402.82 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.8330e-06) exceeds tolerance
+Best objective -4.028199897638e+02, best bound -4.028199897638e+02, gap 0.0000%
